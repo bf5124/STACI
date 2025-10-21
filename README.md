@@ -19,7 +19,7 @@ Results are saved to the `results/` folder.
 
 Set desired arguments in `args.py`, and adjust FFN latent model parameters in `model.py`.
 
-## Code Map
+## Important Scripts
 - `BayesNN.py` — STACI neural network approximation
 - `svgd.py` — SVGD training code
 - `conformal.py` — Conformal fitting and cross-validation
