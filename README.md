@@ -1,28 +1,62 @@
+\# STACI: Spatio-Temporal Aleatoric Conformal Inference
 
-STACI: Spatio-Temporal Aleatoric Conformal Inference
 
-##################################################################################
-Scripts: These will recreate STACI paper results
-#################
 
-Packages are located in the environment.yml file
+> Recreates the STACI paper results.
 
-We include data in the data folder with MSS_data and AOD_data. 
 
-The main run files for the STACI method are:
-	1)main_AOD.py: For AOD air pollution dataset 
-	2)main_MSS.py: For synthetic Mean Sea Surface Dataset 
-Results will be saved in the empty results folder attached.
 
-Set desired arguments in the args.py file and adjust FFN latent model parameters in the model.py file.
+\## Environment
 
-BayesNN.py includes the STACI neural network approximation
+Packages are pinned in `environment.yml`.
 
-svgd.py includes training code for SVGD
 
-conformal.py contains conformal fitting and cross validation code
 
-Once the environment is set up and desired args are set, run:
+\## Data
 
-1) python main_AOD.py 
-2) python main_MSS.py 
+We include datasets under `data/`:
+
+\- `AOD\_data/`
+
+\- `MSS\_data/`
+
+
+
+\## How to Run
+
+The main entry points are:
+
+1\. `main\_AOD.py` — Air pollution (AOD) dataset
+
+2\. `main\_MSS.py` — Synthetic Mean Sea Surface (MSS) dataset
+
+
+
+Results are saved to the `results/` folder.
+
+
+
+Set desired arguments in `args.py`, and adjust FFN latent model parameters in `model.py`.
+
+
+
+\## Code Map
+
+\- `BayesNN.py` — STACI neural network approximation
+
+\- `svgd.py` — SVGD training code
+
+\- `conformal.py` — Conformal fitting and cross-validation
+
+
+
+\## Quickstart
+
+```bash
+
+\# After creating/activating the conda env from environment.yml
+
+python main\_AOD.py
+
+python main\_MSS.py
+
